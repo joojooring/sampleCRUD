@@ -8,9 +8,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class BoardController {
 
-	public static void main(String[] args) {
+	@RequestMapping("/board")
+	public String board() {
 		// TODO Auto-generated method stub
-
+		return "listAll";
 	}
 
 }
