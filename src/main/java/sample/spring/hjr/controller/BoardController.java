@@ -1,4 +1,4 @@
-package sample.spring.hjr;
+package sample.spring.hjr.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

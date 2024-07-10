@@ -1,4 +1,4 @@
-package sample.spring.hjr;
+package sample.spring.hjr.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
