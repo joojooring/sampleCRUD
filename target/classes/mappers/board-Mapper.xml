@@ -10,7 +10,7 @@
 		VALUES(#{title}, #{content}, #{writer})
 	</insert>
 
-	<select id="read">
+	<select id="read" resultType="sample.spring.hjr.domain.BoardVO">
 	SELECT no, title, content, writer, regdate, viewcnt
 		FROM tbl_board
 		WHERE no = #{no}
@@ -31,7 +31,9 @@
 	<select id="listAll" resultType="sample.spring.hjr.domain.BoardVO">
 	SELECT * 
 		FROM tbl_board 
-		WHERE no &lt; 0
+		<![CDATA[
+		WHERE no > 0
 		ORDER BY no, regdate
+		]]>
 	</select>
 </mapper>

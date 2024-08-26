@@ -4,7 +4,9 @@
 <head>
 	<title>Home</title>
 </head>
+<form action="listAll" method="get">
 <body>
+<button type="submit"> move to board </button>
 <h1>
 	Hello world! 
 	
@@ -12,4 +14,5 @@
 
 <P>  The time on the server is ${serverTime}. </P>
 </body>
+</form>
 </html>

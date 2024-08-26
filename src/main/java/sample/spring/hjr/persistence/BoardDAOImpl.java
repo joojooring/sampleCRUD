@@ -23,19 +23,19 @@ public class BoardDAOImpl implements BoardDAO {
 	@Override
 	public BoardVO read(Integer no) throws Exception {
 		// TODO Auto-generated method stub
-		return session.selectOne(namespace+".read"+ no);
+		return session.selectOne(namespace+".read", no);
 	}
 
 	@Override
 	public void update(BoardVO vo) throws Exception {
 		// TODO Auto-generated method stub
-		session.update(namespace+".update"+vo);
+		session.update(namespace+".update",vo);
 	}
 
 	@Override
 	public void delete(int no) throws Exception {
 		// TODO Auto-generated method stub
-		session.delete(namespace+".delete"+no);
+		session.delete(namespace+".delete",no);
 	}
 
 	@Override

@@ -32,7 +32,7 @@
 			<c:forEach items="${list}" var="boardVO">
 				<tr>
 					   
-					<td>${boardVO.bno}</td>   
+					<td>${boardVO.no}</td>   
 					<td><a href='/read?no=${boardVO.no}'>${boardVO.title}</a></td> 
 					 
 					<td>${boardVO.writer}</td>   
