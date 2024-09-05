@@ -8,7 +8,7 @@
 <body>
 <button type="submit"> move to board </button>
 <h1>
-	Hello world! 
+	Simple Homepage! 
 	
 </h1>
 

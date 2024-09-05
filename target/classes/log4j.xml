@@ -12,17 +12,34 @@
 	
 	<!-- SQL 로그를 출력하는 로거 설정 -->
 	<logger name="jdbc.sqlonly">
-        <level value="DEBUG" />
+        <level value="OFF" />
         <appender-ref ref="console" />
     </logger>
 
-    <logger name="jdbc.sqltiming">
+    <logger name="jdbc.sqltiming" >
         <level value="DEBUG" />
         <appender-ref ref="console" />
     </logger>
 
     <logger name="jdbc.sqlstmt">
         <level value="DEBUG" />
+        <appender-ref ref="console" />
+    </logger>
+	
+	
+    <!-- 로그 레벨을 조정 -->
+    <logger name="jdbc.resultset">
+        <level value="ERROR" />
+        <appender-ref ref="console" />
+    </logger>
+
+    <logger name="jdbc.audit">
+        <level value="WARN" />
+        <appender-ref ref="console" />
+    </logger>
+
+    <logger name="jdbc.connection">
+        <level value="INFO" />
         <appender-ref ref="console" />
     </logger>
 	
